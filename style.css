@@ -1,0 +1,110 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.calculator {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.calculator-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 16px;
+  display: block;
+}
+
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  border-color: #aaa;
+  box-shadow: none;
+  outline: none;
+}
+
+.operation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.operation-btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 14px 0;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.operation-btn:hover {
+  background-color: #003380;
+}
+
+.operation-btn:first-child {
+  margin-left: 0;
+}
+
+.operation-btn:last-child {
+  margin-right: 0;
+}
+
+.result-container {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  border: 1px solid #eee;
+}
+
+.result-error {
+  color: #dc3545;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+  font-size: 14px;
+}

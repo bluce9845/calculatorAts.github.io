@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h2 class="calculator-title">Kalkulator Sederhana</h2>
+
+      <div class="input-container">
+        <label for="num1" class="form-label">Angka Pertama</label>
+        <input
+          type="number"
+          class="form-control"
+          id="num1"
+          placeholder="Masukkan angka pertama"
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="num2" class="form-label">Angka Kedua</label>
+        <input
+          type="number"
+          class="form-control"
+          id="num2"
+          placeholder="Masukkan angka kedua"
+        />
+      </div>
+
+      <div class="operation-buttons">
+        <button class="operation-btn" id="add-btn">+</button>
+        <button class="operation-btn" id="subtract-btn">-</button>
+        <button class="operation-btn" id="multiply-btn">×</button>
+        <button class="operation-btn" id="divide-btn">÷</button>
+      </div>
+
+      <div class="result-container">Hasil: <span id="result">0</span></div>
+
+      <div class="error-message" id="error-message">
+        Tidak dapat membagi dengan nol!
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
